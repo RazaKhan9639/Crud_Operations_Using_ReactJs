@@ -14,7 +14,7 @@ const Edit = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const a = Employees[index];
+    let a = Employees[index];
     a.name = name;
     a.age = age;
     navigate("/");
@@ -48,7 +48,7 @@ const Edit = () => {
             onChange={(e) => setAge(e.target.value)}
           />
         </Form.Group>
-        <Button variant="primary" type="submit" onClick={() => handleSubmit()}>
+        <Button variant="primary" type="submit" onClick={(e) => handleSubmit(e)}>
           Update
         </Button>
       </Form>

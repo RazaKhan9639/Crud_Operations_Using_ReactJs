@@ -41,7 +41,7 @@ const Home = () => {
                         <td>{employee.name}</td>
                         <td>{employee.age}</td>
                         <td>
-                          <Link to={`/edit/${employee.id}`}>
+                          <Link to={`/edit`}>
                             <Button
                               variant="primary"
                               onClick={() =>
